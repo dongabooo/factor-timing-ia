@@ -1,0 +1,10 @@
+# Descargas crudas (Ken French, FRED): se regeneran con los scripts
+data/raw/
+# Entorno
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store

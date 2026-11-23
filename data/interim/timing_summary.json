@@ -1,0 +1,82 @@
+{
+  "variante_principal": "mlp",
+  "tuning": {
+    "hgb": {
+      "params": {
+        "max_depth": "2",
+        "learning_rate": "0.08",
+        "max_iter": "100"
+      },
+      "valid_excess": 0.0055559027777777785
+    },
+    "mlp": {
+      "params": {
+        "hidden": "(32, 16)",
+        "alpha": "0.001"
+      },
+      "valid_excess": 0.00885173611111111
+    }
+  },
+  "meta_kind": "hgb",
+  "meta_brier": [
+    {
+      "kind": "hgb",
+      "brier_valid": 0.24333333333333337
+    },
+    {
+      "kind": "logit",
+      "brier_valid": 0.3505803031139358
+    }
+  ],
+  "umbrales_por_anio": {
+    "2005": 0.0,
+    "2006": 0.65,
+    "2007": 0.65,
+    "2008": 0.625,
+    "2009": 0.625,
+    "2010": 0.0,
+    "2011": 0.7,
+    "2012": 0.7,
+    "2013": 0.65,
+    "2014": 0.675,
+    "2015": 0.65,
+    "2016": 0.65,
+    "2017": 0.4,
+    "2018": 0.6,
+    "2019": 0.525,
+    "2020": 0.5,
+    "2021": 0.525,
+    "2022": 0.0,
+    "2023": 0.7,
+    "2024": 0.6,
+    "2025": 0.525,
+    "2026": 0.0
+  },
+  "eval": [
+    "2005-01-31",
+    "2026-08-31"
+  ],
+  "meses_eval": 260,
+  "meses_abstencion": 146,
+  "precision_abstencion": 0.4246575342465753,
+  "sharpe_gated": 0.3607423466243862,
+  "sharpe_primary": 0.44005343413824327,
+  "bootstrap_gated_menos_primary": {
+    "diff": -0.07931108751385707,
+    "ci_low": -0.27087979158550574,
+    "ci_high": 0.12196770462897337,
+    "p_diff_le_0": 0.723
+  },
+  "veredicto": "NO FUNCIONA",
+  "robustez_otra_variante": {
+    "variante": "hgb",
+    "meta": "hgb",
+    "sharpe_primary": 0.6237513731682643,
+    "sharpe_gated": 0.5523120437829975,
+    "meses_abstencion": 101
+  },
+  "decision_vigente": {
+    "mes": "2026-09-30",
+    "picks": "Mkt-RF+Mom"
+  }
+}

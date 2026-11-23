@@ -1,0 +1,25 @@
+[project]
+name = "factorlab"
+version = "1.0.0"
+description = "Factor timing con IA: red neuronal que elige factores de inversión + gate de confiabilidad (meta-labeling)"
+authors = [{ name = "Oscar Martinez" }]
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyarrow>=17.0",
+    "requests>=2.32",
+    "scikit-learn>=1.5",
+    "streamlit>=1.40",
+    "plotly>=5.24",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyter>=1.1", "matplotlib>=3.9"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,161 @@
+kappa   0.00   0.25   0.50   0.75   1.00
+lam                                     
+0.0    1.325  1.325  1.325  1.325  1.325
+0.5    0.979  1.000  1.013  1.015  1.010
+1.0    0.825  0.849  0.858  0.851  0.834
+2.0    0.724  0.749  0.753  0.741  0.718
+3.0    0.693  0.718  0.724  0.714  0.692
+5.0    0.670  0.696  0.702  0.693  0.673
+10.0   0.648  0.672  0.678  0.669  0.650
+PARÁMETROS CONGELADOS: lam=0.0, kappa=1.0
+escrito timing_v3_params.json — a partir de aquí se cargan datos internacionales
+  descargado: Developed_ex_US_5_Factors_CSV.zip (6,792 bytes)
+  descargado: Developed_ex_US_Mom_Factor_CSV.zip (2,243 bytes)
+
+*** VEREDICTO poc-03 (Developed ex-US): FUNCIONA — Sharpe v3 1.434 vs top-2 mensual 1.128 ***
+
+===== dev_ex_us — total, 10 pb =====
+                retorno_anual  volatilidad  sharpe  max_drawdown  rotacion_mensual
+estrategia                                                                        
+ew                      0.044        0.030   1.434        -0.079             0.000
+mom12                   0.072        0.083   0.881        -0.281             0.258
+primary                 0.084        0.074   1.128        -0.164             0.660
+v3                      0.044        0.030   1.434        -0.079             0.000
+abl_trimestral          0.069        0.071   0.987        -0.134             0.235
+abl_tilt                0.044        0.030   1.434        -0.079             0.000
+abl_estres              0.084        0.074   1.128        -0.164             0.660
+costo             0pb   10pb   25pb
+estrategia                         
+abl_estres      1.236  1.128  0.965
+abl_tilt        1.434  1.434  1.434
+abl_trimestral  1.027  0.987  0.925
+ew              1.434  1.434  1.434
+mom12           0.920  0.881  0.823
+primary         1.236  1.128  0.965
+v3              1.434  1.434  1.434
+periodo         2001-2009  2010-2019  2020-2026  total
+estrategia                                            
+abl_estres          1.245      1.137      1.040  1.128
+abl_tilt            1.563      1.306      1.453  1.434
+abl_trimestral      1.133      0.527      1.400  0.987
+ew                  1.563      1.306      1.453  1.434
+mom12               1.054      0.847      0.673  0.881
+primary             1.245      1.137      1.040  1.128
+v3                  1.563      1.306      1.453  1.434
+{
+ "bootstrap_v3_menos_primary": {
+  "diff": 0.30572228263833856,
+  "ci_low": -0.07855701592414847,
+  "ci_high": 0.6293664728781462,
+  "p_diff_le_0": 0.0965
+ },
+ "bootstrap_v3_menos_ew": {
+  "diff": -2.220446049250313e-16,
+  "ci_low": -4.440892098500626e-16,
+  "ci_high": 4.440892098500626e-16,
+  "p_diff_le_0": 0.7655
+ },
+ "meses_estres": 83,
+ "meses": 306,
+ "peso_max_promedio_v3": 0.1666666666666667,
+ "factores_con_peso_promedio_v3": 6.0,
+ "pesos_v3_promedio": {
+  "Mkt-RF": 0.167,
+  "SMB": 0.167,
+  "HML": 0.167,
+  "RMW": 0.167,
+  "CMA": 0.167,
+  "Mom": 0.167
+ },
+ "pesos_v3_vigentes": {
+  "mes": "2026-09-30",
+  "Mkt-RF": 0.167,
+  "SMB": 0.167,
+  "HML": 0.167,
+  "RMW": 0.167,
+  "CMA": 0.167,
+  "Mom": 0.167
+ },
+ "exceso_bruto_mensual_vs_ew": {
+  "ew": 0.0,
+  "mom12": 0.002699183006535948,
+  "primary": 0.003964869281045751,
+  "v3": 4.970920806141414e-19,
+  "abl_trimestral": 0.00239640522875817,
+  "abl_tilt": 4.970920806141414e-19,
+  "abl_estres": 0.003964869281045751
+ }
+}
+
+===== us — total, 10 pb =====
+                retorno_anual  volatilidad  sharpe  max_drawdown  rotacion_mensual
+estrategia                                                                        
+ew                      0.022        0.042   0.550        -0.123             0.000
+mom12                   0.038        0.097   0.435        -0.245             0.388
+primary                 0.033        0.082   0.440        -0.282             0.758
+v3                      0.022        0.042   0.550        -0.123             0.000
+abl_trimestral          0.051        0.087   0.614        -0.265             0.296
+abl_tilt                0.022        0.042   0.550        -0.123             0.000
+abl_estres              0.033        0.082   0.440        -0.282             0.758
+costo             0pb   10pb   25pb
+estrategia                         
+abl_estres      0.552  0.440  0.271
+abl_tilt        0.550  0.550  0.550
+abl_trimestral  0.655  0.614  0.553
+ew              0.550  0.550  0.550
+mom12           0.482  0.435  0.362
+primary         0.552  0.440  0.271
+v3              0.550  0.550  0.550
+periodo         2005-2009  2010-2019  2020-2026  total
+estrategia                                            
+abl_estres         -0.109      0.696      0.711  0.440
+abl_tilt            0.106      0.762      0.622  0.550
+abl_trimestral      0.060      0.819      0.851  0.614
+ew                  0.106      0.762      0.622  0.550
+mom12               0.272      0.302      0.742  0.435
+primary            -0.109      0.696      0.711  0.440
+v3                  0.106      0.762      0.622  0.550
+{
+ "bootstrap_v3_menos_primary": {
+  "diff": 0.11043181773641703,
+  "ci_low": -0.25586067951624325,
+  "ci_high": 0.4143552731530355,
+  "p_diff_le_0": 0.2985
+ },
+ "bootstrap_v3_menos_ew": {
+  "diff": 0.0,
+  "ci_low": -2.220446049250313e-16,
+  "ci_high": 1.1102230246251565e-16,
+  "p_diff_le_0": 0.855
+ },
+ "meses_estres": 37,
+ "meses": 260,
+ "peso_max_promedio_v3": 0.16666666666666669,
+ "factores_con_peso_promedio_v3": 6.0,
+ "pesos_v3_promedio": {
+  "Mkt-RF": 0.167,
+  "SMB": 0.167,
+  "HML": 0.167,
+  "RMW": 0.167,
+  "CMA": 0.167,
+  "Mom": 0.167
+ },
+ "pesos_v3_vigentes": {
+  "mes": "2026-09-30",
+  "Mkt-RF": 0.167,
+  "SMB": 0.167,
+  "HML": 0.167,
+  "RMW": 0.167,
+  "CMA": 0.167,
+  "Mom": 0.167
+ },
+ "exceso_bruto_mensual_vs_ew": {
+  "ew": 0.0,
+  "mom12": 0.0019639102564102564,
+  "primary": 0.0018308333333333332,
+  "v3": 2.027666562965679e-19,
+  "abl_trimestral": 0.0028312179487179484,
+  "abl_tilt": 2.027666562965679e-19,
+  "abl_estres": 0.0018308333333333332
+ }
+}

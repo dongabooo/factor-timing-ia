@@ -1,0 +1,138 @@
+{
+  "lam": 0.0,
+  "kappa": 1.0,
+  "criterio": "Sharpe(v3) > Sharpe(top-2 mensual) a 10 pb en Developed ex-US 2001-03..2026-08",
+  "dev_ex_us": {
+    "ventana": [
+      "2001-03-31",
+      "2026-08-31"
+    ],
+    "sharpe_10pb": {
+      "ew": 1.4336747262190814,
+      "mom12": 0.8814246597866764,
+      "primary": 1.1279524435807426,
+      "v3": 1.4336747262190812,
+      "abl_trimestral": 0.9865883541541831,
+      "abl_tilt": 1.4336747262190812,
+      "abl_estres": 1.1279524435807426
+    },
+    "bootstrap_v3_menos_primary": {
+      "diff": 0.30572228263833856,
+      "ci_low": -0.07855701592414847,
+      "ci_high": 0.6293664728781462,
+      "p_diff_le_0": 0.0965
+    },
+    "bootstrap_v3_menos_ew": {
+      "diff": -2.220446049250313e-16,
+      "ci_low": -4.440892098500626e-16,
+      "ci_high": 4.440892098500626e-16,
+      "p_diff_le_0": 0.7655
+    },
+    "rotacion_mensual": {
+      "ew": 0.0,
+      "mom12": 0.2581699346405229,
+      "primary": 0.6601307189542484,
+      "v3": 0.0,
+      "abl_trimestral": 0.23529411764705882,
+      "abl_tilt": 0.0,
+      "abl_estres": 0.6601307189542484
+    },
+    "exceso_bruto_mensual_vs_ew": {
+      "ew": 0.0,
+      "mom12": 0.002699183006535948,
+      "primary": 0.003964869281045751,
+      "v3": 4.970920806141414e-19,
+      "abl_trimestral": 0.00239640522875817,
+      "abl_tilt": 4.970920806141414e-19,
+      "abl_estres": 0.003964869281045751
+    },
+    "meses_estres": 83,
+    "meses": 306,
+    "peso_max_promedio_v3": 0.1666666666666667,
+    "factores_con_peso_promedio_v3": 6.0,
+    "pesos_v3_promedio": {
+      "Mkt-RF": 0.167,
+      "SMB": 0.167,
+      "HML": 0.167,
+      "RMW": 0.167,
+      "CMA": 0.167,
+      "Mom": 0.167
+    },
+    "pesos_v3_vigentes": {
+      "mes": "2026-09-30",
+      "Mkt-RF": 0.167,
+      "SMB": 0.167,
+      "HML": 0.167,
+      "RMW": 0.167,
+      "CMA": 0.167,
+      "Mom": 0.167
+    }
+  },
+  "veredicto": "FUNCIONA",
+  "us": {
+    "ventana": [
+      "2005-01-31",
+      "2026-08-31"
+    ],
+    "sharpe_10pb": {
+      "ew": 0.5499908081026812,
+      "mom12": 0.4345949809198777,
+      "primary": 0.43955899036626417,
+      "v3": 0.5499908081026812,
+      "abl_trimestral": 0.6141324867333424,
+      "abl_tilt": 0.5499908081026812,
+      "abl_estres": 0.43955899036626417
+    },
+    "bootstrap_v3_menos_primary": {
+      "diff": 0.11043181773641703,
+      "ci_low": -0.25586067951624325,
+      "ci_high": 0.4143552731530355,
+      "p_diff_le_0": 0.2985
+    },
+    "bootstrap_v3_menos_ew": {
+      "diff": 0.0,
+      "ci_low": -2.220446049250313e-16,
+      "ci_high": 1.1102230246251565e-16,
+      "p_diff_le_0": 0.855
+    },
+    "rotacion_mensual": {
+      "ew": 0.0,
+      "mom12": 0.38846153846153847,
+      "primary": 0.7576923076923077,
+      "v3": 0.0,
+      "abl_trimestral": 0.29615384615384616,
+      "abl_tilt": 0.0,
+      "abl_estres": 0.7576923076923077
+    },
+    "exceso_bruto_mensual_vs_ew": {
+      "ew": 0.0,
+      "mom12": 0.0019639102564102564,
+      "primary": 0.0018308333333333332,
+      "v3": 2.027666562965679e-19,
+      "abl_trimestral": 0.0028312179487179484,
+      "abl_tilt": 2.027666562965679e-19,
+      "abl_estres": 0.0018308333333333332
+    },
+    "meses_estres": 37,
+    "meses": 260,
+    "peso_max_promedio_v3": 0.16666666666666669,
+    "factores_con_peso_promedio_v3": 6.0,
+    "pesos_v3_promedio": {
+      "Mkt-RF": 0.167,
+      "SMB": 0.167,
+      "HML": 0.167,
+      "RMW": 0.167,
+      "CMA": 0.167,
+      "Mom": 0.167
+    },
+    "pesos_v3_vigentes": {
+      "mes": "2026-09-30",
+      "Mkt-RF": 0.167,
+      "SMB": 0.167,
+      "HML": 0.167,
+      "RMW": 0.167,
+      "CMA": 0.167,
+      "Mom": 0.167
+    }
+  }
+}

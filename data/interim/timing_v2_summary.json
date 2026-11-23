@@ -1,0 +1,85 @@
+{
+  "experimento": "v2 exploratorio: freno de rotaci\u00f3n (hist\u00e9resis)",
+  "delta": 0.0,
+  "validacion": [
+    {
+      "delta": 0.0,
+      "sharpe_valid_10pb": 1.5340647289063516,
+      "rotacion_valid": 0.7037037037037037
+    },
+    {
+      "delta": 0.01,
+      "sharpe_valid_10pb": 1.3211788311896335,
+      "rotacion_valid": 0.6851851851851852
+    },
+    {
+      "delta": 0.02,
+      "sharpe_valid_10pb": 1.1996265973719797,
+      "rotacion_valid": 0.6481481481481481
+    },
+    {
+      "delta": 0.03,
+      "sharpe_valid_10pb": 1.1813717878156118,
+      "rotacion_valid": 0.5925925925925926
+    },
+    {
+      "delta": 0.05,
+      "sharpe_valid_10pb": 1.0936686816922325,
+      "rotacion_valid": 0.5555555555555556
+    },
+    {
+      "delta": 0.075,
+      "sharpe_valid_10pb": 0.9992743643677962,
+      "rotacion_valid": 0.5185185185185185
+    },
+    {
+      "delta": 0.1,
+      "sharpe_valid_10pb": 0.852063360399082,
+      "rotacion_valid": 0.4444444444444444
+    },
+    {
+      "delta": 0.15,
+      "sharpe_valid_10pb": 0.6764888898260444,
+      "rotacion_valid": 0.25
+    }
+  ],
+  "criterio": "Sharpe(v2) > 0.44 a 10 pb, 2005-01-31..2026-08-31",
+  "sharpe_v2": 0.43955899036626417,
+  "sharpe_primary": 0.43955899036626417,
+  "sharpe_ew": 0.5499908081026812,
+  "veredicto": "NO FUNCIONA",
+  "bootstrap_v2_menos_primary": {
+    "diff": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "p_diff_le_0": 1.0
+  },
+  "bootstrap_v2_menos_ew": {
+    "diff": -0.11043181773641703,
+    "ci_low": -0.4143552731530356,
+    "ci_high": 0.25586067951624314,
+    "p_diff_le_0": 0.7015
+  },
+  "diagnostico": {
+    "primary": {
+      "retorno_bruto_mensual": 0.0037507692307692303,
+      "costo_mensual_10pb": 0.0007576923076923079,
+      "rotacion_mensual": 0.7576923076923077
+    },
+    "v2": {
+      "retorno_bruto_mensual": 0.0037507692307692303,
+      "costo_mensual_10pb": 0.0007576923076923079,
+      "rotacion_mensual": 0.7576923076923077
+    },
+    "ew": {
+      "retorno_bruto_mensual": 0.0019199358974358973,
+      "costo_mensual_10pb": 0.0,
+      "rotacion_mensual": 0.0
+    }
+  },
+  "meses_mismos_picks_que_primary": 1.0,
+  "decision_vigente": {
+    "mes": "2026-09-30",
+    "picks": "Mkt-RF+Mom"
+  }
+}

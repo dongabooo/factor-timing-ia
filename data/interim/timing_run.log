@@ -1,0 +1,41 @@
+variante elegida por validación 1996-1999: mlp {'hgb': {'params': {'max_depth': '2', 'learning_rate': '0.08', 'max_iter': '100'}, 'valid_excess': 0.0055559027777777785}, 'mlp': {'params': {'hidden': '(32, 16)', 'alpha': '0.001'}, 'valid_excess': 0.00885173611111111}}
+meta-modelo elegido (Brier 2003-2004): hgb
+    kind  brier_valid
+1    hgb     0.243333
+0  logit     0.350580
+ year train_last  threshold
+ 2005 2004-11-30      0.000
+ 2006 2005-11-30      0.650
+ 2007 2006-11-30      0.650
+ 2008 2007-11-30      0.625
+ 2009 2008-11-30      0.625
+ 2010 2009-11-30      0.000
+ 2011 2010-11-30      0.700
+ 2012 2011-11-30      0.700
+ 2013 2012-11-30      0.650
+ 2014 2013-11-30      0.675
+ 2015 2014-11-30      0.650
+ 2016 2015-11-30      0.650
+ 2017 2016-11-30      0.400
+ 2018 2017-11-30      0.600
+ 2019 2018-11-30      0.525
+ 2020 2019-11-30      0.500
+ 2021 2020-11-30      0.525
+ 2022 2021-11-30      0.000
+ 2023 2022-11-30      0.700
+ 2024 2023-11-30      0.600
+ 2025 2024-11-30      0.525
+ 2026 2025-11-30      0.000
+
+=== MÉTRICAS 2005-2026, costo 10 pb ===
+            retorno_anual  volatilidad  sharpe  max_drawdown  hit_vs_ew  rotacion_mensual
+estrategia                                                                               
+ew                  0.022        0.042   0.550        -0.123      0.000             0.000
+mom12               0.038        0.097   0.436        -0.245      0.562             0.381
+primary             0.033        0.082   0.440        -0.282      0.508             0.754
+gated               0.021        0.065   0.361        -0.224      0.219             0.487
+
+meses de abstención: 146 de 260 | precisión: 0.425
+bootstrap Sharpe(gated) - Sharpe(primary): {'diff': -0.07931108751385707, 'ci_low': -0.27087979158550574, 'ci_high': 0.12196770462897337, 'p_diff_le_0': 0.723}
+VEREDICTO AC-4: NO FUNCIONA
+robustez (hgb): {'variante': 'hgb', 'meta': 'hgb', 'sharpe_primary': 0.6237513731682643, 'sharpe_gated': 0.5523120437829975, 'meses_abstencion': 101}
